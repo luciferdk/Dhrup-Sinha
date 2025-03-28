@@ -15,7 +15,7 @@ export default function NavBar() {
   const handleNavigation = (path: string) => {
     try {
       if (path === "/") {
-        router.push("../../");
+        router.push("/");
       } else {
         router.push(`/allPages${path}`);
       }
@@ -26,13 +26,13 @@ export default function NavBar() {
 
   return (
 
-      <nav>
-        <ul>
+      <nav className="flex justify-center bg-gray-800 p-4">
+        <ul className="flex">
         {NavList.map((item) => (
-          <li key={item.path}>
+          <li key={item.path} className="flex ">
           <button
           onClick={() => handleNavigation(item.path)}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className=" flex  bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           {item.name}
         </button></li>
