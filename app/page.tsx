@@ -8,7 +8,6 @@ export default function Home() {
       <p>{`"World"`}</p>
       
       </NavbarLayout>
-    
   );
 }
 

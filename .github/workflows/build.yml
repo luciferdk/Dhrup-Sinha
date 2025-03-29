@@ -1,0 +1,36 @@
+name: CI Pipeline to formatting on PR
+
+on:
+  push:
+    branches: [main, dev] # Runs CI on push to main & dev branches
+  pull_request:
+    branches: [main, dev] # Runs on PRs to these branches
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18 # Adjust as per your Next.js version
+          cache: 'npm' # Caches dependencies
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint & Format Check
+        run: |
+          npm run lint
+          npm run format
+
+      - name: TypeScript Type Checking
+        run: npm run type-check
+
+      - name: Build Next.js App
+        run: npm run build
+
