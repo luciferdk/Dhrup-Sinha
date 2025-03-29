@@ -5,8 +5,9 @@ export default function Home() {
   return (
     <div className="   ">
       <NavbarLayout>
-      <p>This is the main content of the home page.</p>
-      <h1>Welcome to the Home Page</h1>
+      <p>{`"Hello"`}</p>
+      <p>{`"World"`}</p>
+      
       <HomePage />
       </NavbarLayout>
     </div>
@@ -17,13 +18,9 @@ export default function Home() {
 export function HomePage () {
   return (
     <div>
-     <p>This is the main content of the home page.</p>
-     <h1>Welcome to the Home Page</h1>
-     <p>This is the main content of the home page.</p>
-     <h1>Welcome to the Home Page</h1>
-     <p>This is the main content of the home page.</p>
-     <h1>Welcome to the Home Page</h1>
-     <p>This is the main content of the home page.</p>  
+     <p>{`"Hello Home Page"`}</p>
+
+    
     </div>
   )   
 }
