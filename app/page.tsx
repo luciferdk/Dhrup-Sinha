@@ -3,7 +3,7 @@ import NavbarLayout from "../component/navlayout/navlayout";
 
 export default function Home() {
   return (
-    <div className="flex  min-h-screen ">
+    <div className="   ">
       <NavbarLayout>
       <p>This is the main content of the home page.</p>
       <h1>Welcome to the Home Page</h1>
@@ -17,11 +17,13 @@ export default function Home() {
 export function HomePage () {
   return (
     <div>
-      title: "Home Page",
-  description: "This is the home page of the website.",
-  keywords: ["home", "welcome", "main"], title: "Home Page",
-  description: "This is the home page of the website.",
-  keywords: ["home", "welcome", "main"], 
+     <p>This is the main content of the home page.</p>
+     <h1>Welcome to the Home Page</h1>
+     <p>This is the main content of the home page.</p>
+     <h1>Welcome to the Home Page</h1>
+     <p>This is the main content of the home page.</p>
+     <h1>Welcome to the Home Page</h1>
+     <p>This is the main content of the home page.</p>  
     </div>
   )   
 }
