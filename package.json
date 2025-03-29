@@ -26,6 +26,11 @@
     "@eslint/eslintrc": "^3"
   },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "@types/node": "^22.13.14",
+    "@types/react": "^19.0.12",
+    "eslint": "^9.23.0",
+    "eslint-config-next": "^15.2.4",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
   }
 }
