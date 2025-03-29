@@ -10,14 +10,11 @@ const NavList = [
   { name: "Project", path: "/project" },
 ];
 export default function NavBar() {
-
   const [isOpen, setIsOpen] = useState(false);
 
-const toggleMenu = (isOpen: boolean) => {
-  setIsOpen((prev) => !prev);
-}
-
-
+  const toggleMenu = (isOpen: boolean) => {
+    setIsOpen((prev) => !prev);
+  };
 
   const router = useRouter();
 
@@ -35,15 +32,17 @@ const toggleMenu = (isOpen: boolean) => {
 
   return (
     <nav className="grid grid-cols-8 gap-1 bg-gray-800 p-4  ">
-
       {/* First Div */}
-      <div className={`col-start-1 col-end-1 ${!isOpen ? "block" : "hidden"} md:block`}>
+      <div
+        className={`col-start-1 col-end-1 ${!isOpen ? "block" : "hidden"} md:block`}
+      >
         <div className="py-2 text-white font-bold">xDev</div>
       </div>
 
-
-{/* Second Div */}
-      <div className={`   transition-all duration-300 ${isOpen ? "block" : "hidden"  } md:block`}>
+      {/* Second Div */}
+      <div
+        className={`   transition-all duration-300 ${isOpen ? "block" : "hidden"} md:block`}
+      >
         <ul className="flex">
           {NavList.map((item) => (
             <li key={item.path} className="flex ">
@@ -58,13 +57,19 @@ const toggleMenu = (isOpen: boolean) => {
         </ul>
       </div>
 
-
-
       {/* Third Div */}
 
-      <div className= {`col-start-8 col-end-8 justify-self-end  ${isOpen ? "block" : "hidden"}md:hidden `}>
-        <button  onClick={()=>{toggleMenu(isOpen)}} className=" py-2 text-white text-center rounded">
-          <svg xmlns="http://www.w3.org/2000/svg"
+      <div
+        className={`col-start-8 col-end-8 justify-self-end  ${isOpen ? "block" : "hidden"}md:hidden `}
+      >
+        <button
+          onClick={() => {
+            toggleMenu(isOpen);
+          }}
+          className=" py-2 text-white text-center rounded"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
