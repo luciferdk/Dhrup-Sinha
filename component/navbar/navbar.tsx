@@ -43,8 +43,8 @@ const toggleMenu = (isOpen: boolean) => {
 
 
 {/* Second Div */}
-      <div className={`  col-start-4 col-end-5 transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
-        <ul className="flex gap-2">
+      <div className={`   transition-all duration-300 ${isOpen ? "block" : "hidden"  } md:block`}>
+        <ul className="flex">
           {NavList.map((item) => (
             <li key={item.path} className="flex ">
               <button
@@ -62,12 +62,12 @@ const toggleMenu = (isOpen: boolean) => {
 
       {/* Third Div */}
 
-      <div className=" col-start-8 col-end-8 justify-self-end">
+      <div className= {`col-start-8 col-end-8 justify-self-end  ${isOpen ? "block" : "hidden"}md:hidden `}>
         <button  onClick={()=>{toggleMenu(isOpen)}} className=" py-2 text-white text-center rounded">
           <svg xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="size-6"
           >
