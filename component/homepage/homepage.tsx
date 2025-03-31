@@ -15,7 +15,7 @@ export default function HomePages() {
       </div>
 
       {/* Left Section (Text) */}
-      <div className="md:w-1/2 text-center md:text-left md:p-12">
+      <div className="md:w-1/2 text-center md:text-left pt-7 md:p-12">
         <h1 className="text-4xl md:text-6xl text-center font-bold pb-4">
           Hi, I'm Dhrup Sinha
         </h1>
