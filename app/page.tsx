@@ -1,10 +1,9 @@
 import NavbarLayout from "../component/navlayout/navlayout";
-
+import HomePage from "../component/homepage/homepage";
 export default function Home() {
   return (
     <NavbarLayout>
-      <p>{`"Hello"`}</p>
-      <p>{`"World"`}</p>
+      <HomePage />
     </NavbarLayout>
   );
 }
