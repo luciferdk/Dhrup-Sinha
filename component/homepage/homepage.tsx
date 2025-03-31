@@ -5,7 +5,9 @@ export default function HomePages() {
     <div className="h-screen bg-gray-100 flex flex-col md:flex-row md:items-center md:justify-between p-6">
       {/* Left Section (Text) */}
       <div className="md:w-1/2 text-center md:text-left md:p-12">
-        <h1 className="text-4xl md:text-6xl font-bold pb-4">Hi, I'm Dhrup Sinha</h1>
+        <h1 className="text-4xl md:text-6xl font-bold pb-4">
+          Hi, I'm Dhrup Sinha
+        </h1>
         <p className="text-lg md:text-xl text-gray-600">
           A Full Stack and DevOps Developer
         </p>
@@ -34,7 +36,7 @@ export default function HomePages() {
           </a>
         </div>
       </div>
-      
+
       {/* Right Section (Image) */}
       <div className="mt-3 md:w-1/2 h-full flex justify-center items-center">
         <Image
