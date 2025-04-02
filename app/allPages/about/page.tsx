@@ -20,7 +20,7 @@ export default function About() {
 
           {/* About section  */}
           <div className="ml-0 md:ml-10 md:mt-0 mt-4 ">
-            <div className="text-wrap  w-98 md:w-330 h-100 md:h-80">
+            <div className="text-wrap  w-98 md:w-319 h-100 md:h-80">
               <h1 className=" text-2xl md:text-5xl font-bold pb-2">About Me</h1>
               <p className=" text-base md:text-2xl font-serif text-left ">
                 Hi, I&apos;m Dhrup Sinha a software developer a Full Stack and
