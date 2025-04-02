@@ -25,7 +25,7 @@ export default function HomePages() {
 
         {/* Download Button */}
         <div className=" flex justify-center ">
-          <div className=" mt-6 border-2 p-4 hover:bg-blue-500 rounded-xl shadow-xl md:w-1/5">
+          <div className=" mt-6 border-2 p-4 hover:bg-blue-500 rounded-xl shadow-xl md:w-2/7">
             <a
               className="flex justify-between md:justify-between font-bold text-center md:text-xl"
               href="downloadeblfile/DHRUP_KUMAR_SINHA.pdf"
