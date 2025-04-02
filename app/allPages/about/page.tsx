@@ -1,6 +1,6 @@
 import NavbarLayout from "@/component/navlayout/navlayout";
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaTwitter, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export default function About() {
   return (
@@ -23,16 +23,16 @@ export default function About() {
             <div className="text-wrap  w-98 md:w-330 h-100 md:h-80">
               <h1 className=" text-2xl md:text-5xl font-bold pb-2">About Me</h1>
               <p className=" text-base md:text-2xl font-serif text-left ">
-                Hi, I'm Dhrup Sinha a software developer a Full Stack and DevOps
-                Developer Enthusiast With a strong foundation in development and
-                hands-on experience through impactful projects, I'm eager to
-                bring my skills to challenging roles in the tech industry. I'm
-                always open to learning new technologies and adapting to
-                emerging trends, ensuring I stay at the forefront of innovation.
-                Ready to take the next step in my professional journey, I'm
-                excited to contribute to dynamic teams and make a meaningful
-                impact. Feel free to explore the Projects and Experience
-                sections to know more about my work!
+                Hi, I&apos;m Dhrup Sinha a software developer a Full Stack and
+                DevOps Developer Enthusiast With a strong foundation in
+                development and hands-on experience through impactful projects,
+                I&apos;m eager to bring my skills to challenging roles in the
+                tech industry. I&apos;m always open to learning new technologies
+                and adapting to emerging trends, ensuring I stay at the
+                forefront of innovation. Ready to take the next step in my
+                professional journey, I&apos;m excited to contribute to dynamic
+                teams and make a meaningful impact. Feel free to explore the
+                Projects and Experience sections to know more about my work!
               </p>
             </div>
 
