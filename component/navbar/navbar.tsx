@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+// list of array for page along path
 const NavList = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
@@ -18,6 +19,7 @@ export default function NavBar() {
     setIsOpen((prev) => !prev);
   };
 
+  // Navigation handling function
   const handleNavigation = (path: string) => {
     try {
       router.push(path === "/" ? "/" : `/allPages${path}`);

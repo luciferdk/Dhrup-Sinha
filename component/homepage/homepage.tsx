@@ -22,6 +22,7 @@ export default function HomePages() {
         <p className="text-lg text-center md:text-xl text-gray-600">
           A Full Stack and DevOps Developer
         </p>
+
         {/* Download Button */}
         <div className=" flex justify-center ">
           <div className=" mt-6 border-2 p-4 hover:bg-blue-500 rounded-xl shadow-xl md:w-1/4">
