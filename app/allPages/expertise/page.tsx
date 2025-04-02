@@ -1,6 +1,6 @@
 import NavbarLayout from "@/component/navlayout/navlayout";
 
-export default function Experties() {
+export default function Expertise() {
   return (
     <NavbarLayout>
       <div>

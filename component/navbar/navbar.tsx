@@ -6,9 +6,9 @@ import { useState } from "react";
 const NavList = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Contact", path: "/contact" },
   { name: "Expertise", path: "/expertise" },
   { name: "Project", path: "/project" },
+  { name: "Contact", path: "/contact" },
 ];
 
 export default function NavBar() {

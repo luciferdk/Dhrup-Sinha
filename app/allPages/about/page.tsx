@@ -5,12 +5,12 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 export default function About() {
   return (
     <NavbarLayout>
-      <div className="bg-gray-200 m-2 md:m-2 h-full ">
-        <div className="  p-3 m-0 md:mx-10 flex flex-col md:flex-row md:items-center md:flex-wrap flex-nowrap md:items-around  h-screen ">
+      <div className="bg-gray-200 m-2 md:m-2 h-100% ">
+        <div className="  p-3 m-0 md:mx-10 flex flex-col md:flex-row md:items-center md:flex-wrap  flex-nowrap md:items-around  h-screen ">
           {/* Image section */}
-          <div>
+          <div className="flex justify-center">
             <Image
-              className=" w-full h-full object-cover"
+              className=" w-70 h-70 md:w-full md:h-full object-cover "
               src="/downloadeblfile/dhrupsi.jpeg"
               width={300}
               height={300}
@@ -52,7 +52,7 @@ export default function About() {
 
                 {/* LinkedIn Button */}
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/dhrup-kumar-sinha-69a219310"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:bg-gray-700 bg-blue-400 border-2 border-red-500 p-3 rounded-lg flex items-center justify-center"
@@ -62,7 +62,7 @@ export default function About() {
 
                 {/* X (Twitter) Button */}
                 <a
-                  href="https://twitter.com/yourusername"
+                  href="https://x.com/Dksinha467530"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:bg-gray-700 bg-black border-2 border-red-500 p-3 rounded-lg flex items-center justify-center"
