@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HomePages() {
   return (
-    <div className="h-screen bg-gray-100 flex flex-col md:flex-row md:items-center md:justify-between p-2">
+    <div className="h-screen bg-slate-100 flex flex-col md:flex-row md:items-center md:justify-between p-2">
       {/* Image (Top on Mobile, Right on Laptop) */}
       <div className="w-full md:w-1/2 h-full flex justify-center items-center order-first md:order-last">
         <Image

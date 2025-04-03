@@ -29,7 +29,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-gray-800 p-3">
+    <nav className="bg-violet-400 p-3">
       {/* Main Container */}
       <div className="flex items-center justify-between flex-wrap">
         {/* First Div (Logo) */}
