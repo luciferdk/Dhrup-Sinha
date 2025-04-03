@@ -29,12 +29,12 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-violet-400 p-3">
+    <nav className="bg-transparent p-3">
       {/* Main Container */}
       <div className="flex items-center justify-between flex-wrap">
         {/* First Div (Logo) */}
         <div
-          className={`text-white font-bold flex-shrink-0 md:block ${isOpen ? "hidden" : "block"}`}
+          className={`text-black font-bold flex-shrink-0 md:block ${isOpen ? "hidden" : "block"}`}
         >
           xDev
         </div>
@@ -47,7 +47,7 @@ export default function NavBar() {
             <button
               key={item.path}
               onClick={() => handleNavigation(item.path)}
-              className="bg-gray-500 hover:bg-blue-500 text-white py-1 px-2 sm:py-2 sm:px-3 rounded text-xs sm:text-sm"
+              className="text-black hover:bg-blue-500 py-1 px-2 sm:py-2 sm:px-3 rounded text-xs sm:text-sm"
             >
               {item.name}
             </button>
@@ -57,7 +57,7 @@ export default function NavBar() {
         {/* Third Div (Menu Toggle Button) */}
         <button
           onClick={() => toggleMenu(isOpen)}
-          className="text-white flex-shrink-0 md:hidden"
+          className="text-black flex-shrink-0 md:hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

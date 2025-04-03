@@ -2,13 +2,7 @@ import React from "react";
 import { Card, CardContent } from "../../../component/ui/card";
 import { Badge } from "../../../component/ui/badge";
 import NavLayout from "../../../component/navlayout/navlayout";
-import {
-  FaReact,
-  FaNodeJs,
-  FaDocker,
-  FaAws,
-  FaGithub,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDocker, FaAws, FaGithub } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiPrisma,
@@ -47,11 +41,15 @@ const skills = [
 export default function ExpertisePage() {
   return (
     <NavLayout>
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black p-10 text-white flex flex-col items-center">
+      <div className="min-h-screen bg-[#0f0f10] p-10 text-white flex flex-col items-center relative">
+        {/* Neon Glow Effect */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(147,51,234,0.3),_transparent_70%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_rgba(14,165,233,0.3),_transparent_70%)]"></div>
+
         <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 mb-12 drop-shadow-lg">
           My Expertise
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto relative z-10">
           {skills.map((skill, index) => (
             <Card
               key={index}
