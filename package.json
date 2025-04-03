@@ -11,6 +11,8 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.6.3",
     "next": "15.2.4",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
