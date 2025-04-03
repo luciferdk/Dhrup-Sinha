@@ -17,7 +17,7 @@ export default function HomePages() {
       {/* Left Section (Text) */}
       <div className="md:w-1/2 text-center md:text-left pt-7 md:p-12">
         <h1 className="text-4xl md:text-6xl text-center font-bold pb-4">
-          Hi, I'm Dhrup Sinha
+          Hi, I&apos;m Dhrup Sinha
         </h1>
         <p className="text-lg text-center md:text-xl text-gray-600">
           A Full Stack and DevOps Developer
