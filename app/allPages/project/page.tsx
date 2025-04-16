@@ -4,8 +4,8 @@ export default function Project() {
   return (
     <NavbarLayout>
       <div>
-        <h1>Project</h1>
-        <p>This is the project page.</p>
+        
+        <p>Currently i&apos;m working on project</p>
       </div>
     </NavbarLayout>
   );
