@@ -13,7 +13,7 @@ export async function POST(req: Request) {
         pass: process.env.GMAIL_PASS, // Your Gmail app password
       },
     });
-
+    
     // Email Content
     const mailOptions = {
       from: process.env.GMAIL_USER,
