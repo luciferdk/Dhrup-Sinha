@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "../../../component/ui/card";
 import { Badge } from "../../../component/ui/badge";
-import NavLayout from "../../../component/navlayout/navlayout";
 import { FaReact, FaNodeJs, FaDocker, FaAws, FaGithub } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -40,7 +39,6 @@ const skills = [
 
 export default function ExpertisePage() {
   return (
-    <NavLayout>
       <div className="min-h-screen bg-[#0f0f10] p-10 text-white flex flex-col items-center relative">
         {/* Neon Glow Effect */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(147,51,234,0.3),_transparent_70%)]"></div>
@@ -67,6 +65,5 @@ export default function ExpertisePage() {
           ))}
         </div>
       </div>
-    </NavLayout>
   );
 }

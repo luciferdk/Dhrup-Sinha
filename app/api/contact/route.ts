@@ -13,7 +13,16 @@ export async function POST(req: Request) {
         pass: process.env.GMAIL_PASS, // Your Gmail app password
       },
     });
-    
+    //alternative way to write for test code not good practice
+// SMTP Transporter
+    /* const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: dksinha0701@gmail.com, // Your Gmail address
+        pass: mlxu tsgs vptc vsej, // Your Gmail app password
+      },
+    }); */
+
     // Email Content
     const mailOptions = {
       from: process.env.GMAIL_USER,

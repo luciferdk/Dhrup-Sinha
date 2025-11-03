@@ -1,5 +1,4 @@
 "use client";
-import NavbarLayout from "@/component/navlayout/navlayout";
 import { MdEmail, MdPhone, MdLocationOn, MdAccessTime } from "react-icons/md";
 import { useState } from "react";
 
@@ -37,7 +36,6 @@ export default function Contact() {
   };
 
   return (
-    <NavbarLayout>
       <div className="flex flex-col md:flex-row items-center justify-center min-h-screen gap-3 md:gapp-3  p-6">
         {/* Input section */}
         <div>
@@ -139,6 +137,5 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </NavbarLayout>
   );
 }

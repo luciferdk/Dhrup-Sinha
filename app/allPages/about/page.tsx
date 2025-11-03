@@ -1,10 +1,8 @@
-import NavbarLayout from "@/component/navlayout/navlayout";
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export default function About() {
   return (
-    <NavbarLayout>
       <div className="bg-gray-200 m-2 md:m-2 h-100% ">
         <div className="  p-3 m-0 md:mx-10 flex flex-col md:flex-row md:items-center md:flex-wrap  flex-nowrap md:items-around  h-screen ">
           {/* Image section */}
@@ -74,6 +72,5 @@ export default function About() {
           </div>
         </div>
       </div>
-    </NavbarLayout>
   );
 }
