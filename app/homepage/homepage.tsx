@@ -1,25 +1,26 @@
+"use client";
 import Image from "next/image";
 
 export default function HomePages() {
   return (
-    <div className="h-screen bg-gradient-to-br from-blue-900 via-teal-700 to-green-600 flex flex-col md:flex-row md:items-center md:justify-between p-6 text-white">
-      {/* Image Section */}
-      <div className="bg-teal-800 w-full md:w-1/2 md:h-full flex justify-center items-center order-first md:order-last p-6 rounded-lg shadow-lg">
-        <Image
-          className="w-full max-w-md md:max-w-lg lg:max-w-xl object-cover rounded-2xl shadow-xl"
-          src="/downloadeblfile/dk.jpeg"
-          width={900}
-          height={900}
-          alt="Picture of the author"
-        />
+    <div className="min-h-screen bg-[#edeef1] flex flex-col md:flex-row md:items-center md:justify-between p-4 sm:p-6 lg:p-10 relative overflow-hidden">
+      {/* Decorative Background Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-10 right-10 w-96 h-96 bg-[#6A5ACD] opacity-10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-[#6A5ACD] opacity-10 rounded-full blur-3xl"></div>
       </div>
 
       {/* Text Section */}
-      <div className="md:w-1/2 text-center md:text-left p-6">
-        <h1 className="text-5xl md:text-7xl font-extrabold pb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 drop-shadow-lg">
+      <div className="md:w-1/2 text-center md:text-left p-4 sm:p-6 lg:p-10 z-10 order-last md:order-first">
+        <div className="mb-6 inline-block">
+          <div className="h-1 w-16 sm:w-20 bg-[#6A5ACD] rounded-full"></div>
+        </div>
+
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold pb-4 sm:pb-6 text-[#6A5ACD] leading-tight">
           Hi, I&apos;m Dhrup Sinha
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 pb-6">
+
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 pb-6 sm:pb-8 font-medium">
           A Full Stack and DevOps Developer
         </p>
 
@@ -28,7 +29,7 @@ export default function HomePages() {
           <a
             href="/downloadeblfile/DHRUP_KUMAR_SINHA.pdf"
             download="DHRUP_KUMAR_SINHA.pdf"
-            className="flex items-center gap-3 bg-orange-500 hover:bg-orange-600 transition duration-300 px-6 py-3 rounded-full text-lg font-semibold shadow-lg"
+            className="flex items-center gap-3 bg-[#6A5ACD] hover:bg-[#5a4abd] text-white transition-all duration-300 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl hover:shadow-[#6A5ACD]/30 hover:scale-105 transform"
           >
             Download CV
             <svg
@@ -37,7 +38,7 @@ export default function HomePages() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-5 h-5 sm:w-6 sm:h-6"
             >
               <path
                 strokeLinecap="round"
@@ -46,6 +47,25 @@ export default function HomePages() {
               />
             </svg>
           </a>
+        </div>
+      </div>
+
+      {/* Image Section */}
+      <div className="md:w-1/2 w-full flex justify-center items-center order-first md:order-last p-4 sm:p-6 lg:p-10 z-10">
+        <div className="relative group">
+          {/* Decorative border */}
+          <div className="absolute -inset-4 bg-gradient-to-r from-[#6A5ACD] to-[#8A7AED] rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-xl"></div>
+
+          {/* Image container */}
+          <div className="relative bg-white p-2 sm:p-3 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-4 border-white group-hover:scale-105 transform">
+            <Image
+              className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl object-cover rounded-xl"
+              src="/downloadeblfile/dk.jpeg"
+              width={900}
+              height={900}
+              alt="Picture of the author"
+            />
+          </div>
         </div>
       </div>
     </div>
