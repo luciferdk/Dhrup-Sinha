@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
@@ -29,24 +29,27 @@ export default function About() {
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 border-b-4 border-red-500 inline-block pb-2">
                   About Me
                 </h1>
-                
+
                 <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
-                  Hi, I&apos;m <span className="font-bold text-gray-900">Dhrup Sinha</span>, 
-                  a software developer and Full Stack and DevOps Developer Enthusiast. 
-                  With a strong foundation in development and hands-on experience through 
-                  impactful projects, I&apos;m eager to bring my skills to challenging 
-                  roles in the tech industry.
+                  Hi, I&apos;m{" "}
+                  <span className="font-bold text-gray-900">Dhrup Sinha</span>,
+                  a software developer and Full Stack and DevOps Developer
+                  Enthusiast. With a strong foundation in development and
+                  hands-on experience through impactful projects, I&apos;m eager
+                  to bring my skills to challenging roles in the tech industry.
                 </p>
 
                 <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
-                  I&apos;m always open to learning new technologies and adapting to 
-                  emerging trends, ensuring I stay at the forefront of innovation. 
-                  Ready to take the next step in my professional journey, I&apos;m 
-                  excited to contribute to dynamic teams and make a meaningful impact.
+                  I&apos;m always open to learning new technologies and adapting
+                  to emerging trends, ensuring I stay at the forefront of
+                  innovation. Ready to take the next step in my professional
+                  journey, I&apos;m excited to contribute to dynamic teams and
+                  make a meaningful impact.
                 </p>
 
                 <p className="text-base sm:text-lg text-gray-600 italic">
-                  Feel free to explore the Projects and Experience sections to know more about my work!
+                  Feel free to explore the Projects and Experience sections to
+                  know more about my work!
                 </p>
               </div>
 
@@ -61,11 +64,11 @@ export default function About() {
                     href="https://github.com/luciferdk"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative bg-white hover:bg-gray-900 border-2 border-gray-900 px-6 py-3 rounded-lg flex items-center gap-3 transition-all duration-300 shadow-md hover:shadow-xl"
+                    className="group relative bg-gray-900 hover:bg-white border-2 border-gray-900 px-6 py-3 rounded-lg flex items-center gap-3 transition-all duration-300 shadow-md hover:shadow-xl"
                     aria-label="GitHub Profile"
                   >
-                    <FaGithub className="w-6 h-6 group-hover:text-white transition-colors" />
-                    <span className="font-semibold text-gray-900 group-hover:text-white transition-colors">
+                    <FaGithub className="w-6 h-6 group-hover:text-black text-white transition-colors" />
+                    <span className="font-semibold text-gray-900 group-hover:text-black text-white transition-colors">
                       GitHub
                     </span>
                   </a>
@@ -75,11 +78,11 @@ export default function About() {
                     href="https://linkedin.com/in/dhrup-kumar-sinha-69a219310"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative bg-blue-600 hover:bg-blue-700 border-2 border-blue-600 hover:border-blue-700 px-6 py-3 rounded-lg flex items-center gap-3 transition-all duration-300 shadow-md hover:shadow-xl"
+                    className="group relative bg-blue-600 hover:bg-white border-2 border-blue-600 hover:border-blue-700 px-6 py-3 rounded-lg flex items-center gap-3 transition-all duration-300 shadow-md hover:shadow-xl"
                     aria-label="LinkedIn Profile"
                   >
-                    <FaLinkedin className="w-6 h-6 text-white" />
-                    <span className="font-semibold text-white">
+                    <FaLinkedin className="w-6 h-6 text-white group-hover:text-black hover:text-black" />
+                    <span className="font-semibold text-white group-hover:text-black hover:text-black">
                       LinkedIn
                     </span>
                   </a>
@@ -89,11 +92,11 @@ export default function About() {
                     href="https://x.com/Dksinha467530"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative bg-black hover:bg-gray-800 border-2 border-black hover:border-gray-800 px-6 py-3 rounded-lg flex items-center gap-3 transition-all duration-300 shadow-md hover:shadow-xl"
+                    className="group relative bg-black hover:bg-white border-2 border-black hover:border-gray-800 px-6 py-3 rounded-lg flex items-center gap-3 transition-all duration-300 shadow-md hover:shadow-xl"
                     aria-label="X (Twitter) Profile"
                   >
-                    <FaXTwitter className="w-6 h-6 text-white" />
-                    <span className="font-semibold text-white">
+                    <FaXTwitter className="w-6 h-6 text-white group-hover:text-black hover:text-black" />
+                    <span className="font-semibold text-white group-hover:text-black hover:text-black">
                       Twitter
                     </span>
                   </a>

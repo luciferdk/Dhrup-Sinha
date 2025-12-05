@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { Card, CardContent } from "../../../component/ui/card";
@@ -20,23 +20,86 @@ import {
 } from "react-icons/si";
 
 const skills = [
-  { name: "React.js", icon: <FaReact className="text-cyan-400" />, category: "Frontend" },
-  { name: "Next.js", icon: <SiNextdotjs className="text-[#6A5ACD]" />, category: "Frontend" },
-  { name: "TypeScript", icon: <SiTypescript className="text-blue-500" />, category: "Language" },
-  { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" />, category: "Language" },
-  { name: "Node.js", icon: <FaNodeJs className="text-green-500" />, category: "Backend" },
-  { name: "Express.js", icon: <SiExpress className="text-gray-700" />, category: "Backend" },
-  { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-600" />, category: "Database" },
-  { name: "MongoDB", icon: <SiMongodb className="text-green-500" />, category: "Database" },
-  { name: "Prisma ORM", icon: <SiPrisma className="text-[#6A5ACD]" />, category: "Backend" },
-  { name: "Docker", icon: <FaDocker className="text-blue-400" />, category: "DevOps" },
-  { name: "AWS EC2", icon: <FaAws className="text-orange-500" />, category: "DevOps" },
-  { name: "Git & GitHub", icon: <FaGithub className="text-gray-800" />, category: "Tools" },
-  { name: "C++", icon: <SiCplusplus className="text-blue-500" />, category: "Language" },
-  { name: "HTML5", icon: <SiHtml5 className="text-orange-600" />, category: "Frontend" },
-  { name: "CSS3", icon: <SiCss3 className="text-blue-500" />, category: "Frontend" },
-  { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600" />, category: "Frontend" },
-  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" />, category: "Frontend" },
+  {
+    name: "React.js",
+    icon: <FaReact className="text-cyan-400" />,
+    category: "Frontend",
+  },
+  {
+    name: "Next.js",
+    icon: <SiNextdotjs className="text-[#6A5ACD]" />,
+    category: "Frontend",
+  },
+  {
+    name: "TypeScript",
+    icon: <SiTypescript className="text-blue-500" />,
+    category: "Language",
+  },
+  {
+    name: "JavaScript",
+    icon: <SiJavascript className="text-yellow-400" />,
+    category: "Language",
+  },
+  {
+    name: "Node.js",
+    icon: <FaNodeJs className="text-green-500" />,
+    category: "Backend",
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress className="text-gray-700" />,
+    category: "Backend",
+  },
+  {
+    name: "PostgreSQL",
+    icon: <SiPostgresql className="text-blue-600" />,
+    category: "Database",
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb className="text-green-500" />,
+    category: "Database",
+  },
+  {
+    name: "Prisma ORM",
+    icon: <SiPrisma className="text-[#6A5ACD]" />,
+    category: "Backend",
+  },
+  {
+    name: "Docker",
+    icon: <FaDocker className="text-blue-400" />,
+    category: "DevOps",
+  },
+  {
+    name: "AWS EC2",
+    icon: <FaAws className="text-orange-500" />,
+    category: "DevOps",
+  },
+  {
+    name: "Git & GitHub",
+    icon: <FaGithub className="text-gray-800" />,
+    category: "Tools",
+  },
+  {
+    name: "C++",
+    icon: <SiCplusplus className="text-blue-500" />,
+    category: "Language",
+  },
+  {
+    name: "HTML5",
+    icon: <SiHtml5 className="text-orange-600" />,
+    category: "Frontend",
+  },
+  {
+    name: "CSS3",
+    icon: <SiCss3 className="text-blue-500" />,
+    category: "Frontend",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <SiTailwindcss className="text-cyan-400" />,
+    category: "Frontend",
+  },
 ];
 
 export default function ExpertisePage() {
@@ -60,7 +123,8 @@ export default function ExpertisePage() {
             My Expertise
           </h1>
           <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl mx-auto px-4 leading-relaxed">
-            A comprehensive collection of cutting-edge technologies and tools I use to craft powerful, scalable, and beautiful digital solutions
+            A comprehensive collection of cutting-edge technologies and tools I
+            use to craft powerful, scalable, and beautiful digital solutions
           </p>
         </div>
 
@@ -77,12 +141,12 @@ export default function ExpertisePage() {
                   <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
                     {skill.icon}
                   </div>
-                  
+
                   {/* Skill Name */}
                   <h3 className="text-xs sm:text-sm lg:text-base font-semibold text-center text-gray-800 group-hover:text-[#6A5ACD] transition-colors">
                     {skill.name}
                   </h3>
-                  
+
                   {/* Category Badge */}
                   <Badge className="text-[9px] sm:text-[10px] md:text-xs px-2 py-0.5 sm:py-1 bg-[#6A5ACD] text-white border-0 group-hover:bg-[#5a4abd] transition-all duration-300">
                     {skill.category}
@@ -112,7 +176,9 @@ export default function ExpertisePage() {
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#6A5ACD] mb-1 sm:mb-2">
                   {stat.value}
                 </div>
-                <div className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>

@@ -137,7 +137,7 @@ export default function Contact() {
             <div className="bg-[#edeef1] p-3 rounded-full group-hover:bg-[#6A5ACD] transition-all duration-300">
               <MdPhone className="text-[#6A5ACD] group-hover:text-white w-5 h-5 sm:w-6 sm:h-6 transition-colors duration-300" />
             </div>
-            <p className="text-base sm:text-lg text-gray-700 break-all">1174295002298462231</p>
+            <p className="text-base sm:text-lg text-gray-700 break-all">N/A</p>
           </div>
 
           {/* Address */}
