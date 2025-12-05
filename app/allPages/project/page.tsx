@@ -66,7 +66,7 @@ export default function Project() {
                     }}
                   />
                 </div>
-                
+
                 {/* Project Name Badge */}
                 <Badge className="text-xs sm:text-sm lg:text-base font-semibold px-4 sm:px-5 lg:px-6 py-1.5 sm:py-2 bg-[#6A5ACD] text-white hover:bg-[#5a4abd] rounded-full shadow-md group-hover:shadow-lg transition-all duration-300">
                   {project.name}
