@@ -13,7 +13,6 @@ import {
   SiJavascript,
   SiHtml5,
   SiCss3,
-  SiBootstrap,
   SiTailwindcss,
   SiExpress,
   SiCplusplus,
